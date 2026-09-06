@@ -1,0 +1,36 @@
+{
+  "name": "genpark-scientific-consensus-ratio-mapper-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-study scientific assertion analyzer computing affirmative vs skeptical consensus ratios and sample size statistical power.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "consensus-app",
+    "scientific-consensus",
+    "elicit",
+    "perplexity",
+    "deep-research"
+  ],
+  "inputs": {
+    "research_question": {
+      "type": "string"
+    },
+    "evaluated_studies_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "consensus_dossier_id": {
+      "type": "string"
+    },
+    "affirmative_ratio": {
+      "type": "number"
+    },
+    "consensus_grade": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
